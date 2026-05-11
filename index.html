@@ -1,179 +1,347 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Delicious Bites Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites | Premium Dining</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#FFF8DC">
+<body>
 
-    <!-- Heading -->
-    <center>
-        <h1>Delicious Bites Restaurant</h1>
-        <h3>Fresh Food | Great Taste | Best Service</h3>
-    </center>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-utensils"></i> Delicious <span>Bites</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="#login" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #000; opacity: 1;">Login</a>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
-
-    <!-- Menu Bar -->
-    <center>
-        <table border="1" cellpadding="12" bgcolor="#8B0000">
-            <tr>
-                <td><a href="#home">
-                        <font color="white">Home</font>
-                    </a></td>
-                <td><a href="#about">
-                        <font color="white">About</font>
-                    </a></td>
-                <td><a href="#menu">
-                        <font color="white">Menu</font>
-                    </a></td>
-                <td><a href="#services">
-                        <font color="white">Services</font>
-                    </a></td>
-                <td><a href="#gallery">
-                        <font color="white">Gallery</font>
-                    </a></td>
-                <td><a href="#contact">
-                        <font color="white">Contact</font>
-                    </a></td>
-                <td><a href="#login">
-                        <font color="white">Login</font>
-                    </a></td>
-            </tr>
-        </table>
-    </center>
-
-    <hr>
-
-    <!-- Home Section -->
-    <h2 id="home">Home</h2>
-
-    <p>
-        Welcome to Delicious Bites Restaurant.
-        We provide fresh, delicious, and hygienic food with excellent customer service.
-    </p>
-
-    <!-- Main Image -->
-    <center>
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900" width="700" height="350">
-    </center>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Experience the Taste of <span>Perfection</span></h1>
+                <p>Fresh ingredients, masterful chefs, and an unforgettable dining atmosphere. Discover your new favorite dish tonight.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#contact" class="btn glass" style="color: white; border-color: rgba(255,255,255,0.2);">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <h2 id="about">About Us</h2>
-
-    <p>
-        Delicious Bites Restaurant is one of the best family restaurants in Punjab.
-        We serve Indian, Chinese, Italian, and fast food dishes at affordable prices.
-        Our mission is to provide quality food and a memorable dining experience.
-    </p>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Restaurant Interior">
+                </div>
+                <div class="about-text glass-card glass">
+                    <h3>A Culinary Journey in Punjab</h3>
+                    <p>Delicious Bites Restaurant has established itself as one of the premier dining destinations. We take pride in our rich heritage of authentic flavors fused with modern culinary techniques.</p>
+                    <p>Whether you're craving traditional Indian spices, savory Chinese noodles, or classic Italian pasta, our master chefs craft every dish with passion and the finest, freshest ingredients.</p>
+                    <p>Our mission is simple: to provide extraordinary food and a truly memorable dining experience for every guest that walks through our doors.</p>
+                    <div style="margin-top: 2rem; display: flex; gap: 2rem;">
+                        <div>
+                            <h4 style="color: var(--accent-color); font-size: 1.5rem;">10+</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Years Exp.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent-color); font-size: 1.5rem;">50+</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Signature Dishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Menu Section -->
-    <h2 id="menu">Our Menu</h2>
+    <section id="menu" style="background-color: rgba(0,0,0,0.2);">
+        <div class="container">
+            <h2 class="section-title">Chef's Specials</h2>
+            <div class="menu-grid">
+                
+                <!-- Menu Item 1 -->
+                <div class="menu-item glass-card glass">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza" class="menu-item-img" style="border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <div class="menu-item-content" style="padding: 0;">
+                        <div class="menu-item-header">
+                            <h4>Wood-Fired Pizza</h4>
+                            <span class="menu-item-price">₹250</span>
+                        </div>
+                        <p class="menu-item-desc">Fresh mozzarella, basil, and our secret tomato sauce baked to perfection.</p>
+                    </div>
+                </div>
 
-    <ul>
-        <li>Pizza - ₹250</li>
-        <li>Burger - ₹120</li>
-        <li>Pasta - ₹180</li>
-        <li>Paneer Tikka - ₹220</li>
-        <li>Cold Drinks - ₹60</li>
-        <li>Ice Cream - ₹90</li>
-    </ul>
+                <!-- Menu Item 2 -->
+                <div class="menu-item glass-card glass">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Burger" class="menu-item-img" style="border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <div class="menu-item-content" style="padding: 0;">
+                        <div class="menu-item-header">
+                            <h4>Gourmet Burger</h4>
+                            <span class="menu-item-price">₹120</span>
+                        </div>
+                        <p class="menu-item-desc">Juicy patty with fresh lettuce, tomatoes, and melted cheese on a brioche bun.</p>
+                    </div>
+                </div>
 
-    <!-- Food Images -->
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" width="250" height="180">
+                <!-- Menu Item 3 -->
+                <div class="menu-item glass-card glass">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" alt="Pasta" class="menu-item-img" style="border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <div class="menu-item-content" style="padding: 0;">
+                        <div class="menu-item-header">
+                            <h4>Creamy Pasta</h4>
+                            <span class="menu-item-price">₹180</span>
+                        </div>
+                        <p class="menu-item-desc">Penne in a rich Alfredo sauce with roasted garlic and parmesan.</p>
+                    </div>
+                </div>
 
-    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400" width="250" height="180">
+                <!-- Menu Item 4 -->
+                <div class="menu-item glass-card glass">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&q=80" alt="Paneer Tikka" class="menu-item-img" style="border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <div class="menu-item-content" style="padding: 0;">
+                        <div class="menu-item-header">
+                            <h4>Paneer Tikka</h4>
+                            <span class="menu-item-price">₹220</span>
+                        </div>
+                        <p class="menu-item-desc">Marinated cottage cheese cubes grilled with peppers and onions.</p>
+                    </div>
+                </div>
 
-    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400" width="250" height="180">
+                 <!-- Menu Item 5 -->
+                 <div class="menu-item glass-card glass">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&q=80" alt="Coffee/Cold Drinks" class="menu-item-img" style="border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <div class="menu-item-content" style="padding: 0;">
+                        <div class="menu-item-header">
+                            <h4>Refreshing Beverages</h4>
+                            <span class="menu-item-price">₹60</span>
+                        </div>
+                        <p class="menu-item-desc">A selection of cold drinks, iced teas, and freshly brewed coffees.</p>
+                    </div>
+                </div>
 
-    <!-- Services -->
-    <h2 id="services">Our Services</h2>
+                 <!-- Menu Item 6 -->
+                 <div class="menu-item glass-card glass">
+                    <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600&q=80" alt="Ice Cream" class="menu-item-img" style="border-radius: var(--radius-sm); margin-bottom: 1rem;">
+                    <div class="menu-item-content" style="padding: 0;">
+                        <div class="menu-item-header">
+                            <h4>Artisan Ice Cream</h4>
+                            <span class="menu-item-price">₹90</span>
+                        </div>
+                        <p class="menu-item-desc">Handcrafted flavors including vanilla bean, dark chocolate, and strawberry.</p>
+                    </div>
+                </div>
 
-    <ul>
-        <li>Free Home Delivery</li>
-        <li>Birthday Party Booking</li>
-        <li>Online Table Reservation</li>
-        <li>Live Music</li>
-        <li>Free Wi-Fi</li>
-        <li>Air Conditioned Hall</li>
-    </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- Gallery -->
-    <h2 id="gallery">Restaurant Gallery</h2>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="services-grid">
+                <div class="service-card glass-card glass">
+                    <i class="fa-solid fa-motorcycle service-icon"></i>
+                    <h4>Free Home Delivery</h4>
+                    <p>Hot and fresh food delivered directly to your doorstep within 30 minutes.</p>
+                </div>
+                <div class="service-card glass-card glass">
+                    <i class="fa-solid fa-cake-candles service-icon"></i>
+                    <h4>Event Booking</h4>
+                    <p>Perfect venue for birthday parties, anniversaries, and corporate gatherings.</p>
+                </div>
+                <div class="service-card glass-card glass">
+                    <i class="fa-solid fa-calendar-check service-icon"></i>
+                    <h4>Table Reservation</h4>
+                    <p>Book your table online in advance to skip the queue during rush hours.</p>
+                </div>
+                <div class="service-card glass-card glass">
+                    <i class="fa-solid fa-music service-icon"></i>
+                    <h4>Live Music</h4>
+                    <p>Enjoy soothing live musical performances every weekend evening.</p>
+                </div>
+                <div class="service-card glass-card glass">
+                    <i class="fa-solid fa-wifi service-icon"></i>
+                    <h4>Free Wi-Fi</h4>
+                    <p>Stay connected with our high-speed complimentary internet access.</p>
+                </div>
+                <div class="service-card glass-card glass">
+                    <i class="fa-solid fa-snowflake service-icon"></i>
+                    <h4>AC Dining Hall</h4>
+                    <p>Relax and dine in our fully air-conditioned, comfortable environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400" width="250" height="180">
+    <!-- Gallery Section -->
+    <section id="gallery" style="background-color: rgba(0,0,0,0.2);">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&q=80" alt="Gallery Image 1">
+                    <div class="gallery-overlay"><h4 style="color: white;">Elegant Dining</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80" alt="Gallery Image 2">
+                    <div class="gallery-overlay"><h4 style="color: white;">Bar Lounge</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80" alt="Gallery Image 3">
+                    <div class="gallery-overlay"><h4 style="color: white;">Fresh Spices</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Gallery Image 4">
+                    <div class="gallery-overlay"><h4 style="color: white;">Gourmet Preparation</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400" width="250" height="180">
+    <!-- Contact & Login Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Visit & Connect</h2>
+            <div class="contact-login-wrapper">
+                
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <div class="glass-card glass" style="margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Get in Touch</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4 style="font-size: 1rem; color: var(--text-secondary);">Phone</h4>
+                                    <p>+91 98765 43210</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4 style="font-size: 1rem; color: var(--text-secondary);">Email</h4>
+                                    <p>deliciousbites@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4 style="font-size: 1rem; color: var(--text-secondary);">Location</h4>
+                                    <p>Main Market, Karimpur, Punjab, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container glass">
+                        <iframe src="https://www.google.com/maps?q=Karimpur,Punjab&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
 
-    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400" width="250" height="180">
+                <!-- Login Form -->
+                <div class="login-wrapper" id="login">
+                    <div class="glass-card glass">
+                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Customer Portal</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Login or provide feedback to help us serve you better.</p>
+                        
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                            </div>
 
-    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" width="250" height="180">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label class="custom-control">
+                                        <input type="radio" name="gender" value="male"> Male
+                                    </label>
+                                    <label class="custom-control">
+                                        <input type="radio" name="gender" value="female"> Female
+                                    </label>
+                                </div>
+                            </div>
 
-    <br><br>
+                            <div class="form-group">
+                                <label>Favorite Food Interests</label>
+                                <div class="checkbox-group">
+                                    <label class="custom-control"><input type="checkbox"> Pizza</label>
+                                    <label class="custom-control"><input type="checkbox"> Burger</label>
+                                    <label class="custom-control"><input type="checkbox"> Pasta</label>
+                                    <label class="custom-control"><input type="checkbox"> Ice Cream</label>
+                                </div>
+                            </div>
 
-    <!-- Contact Section -->
-    <h2 id="contact">Contact Us</h2>
+                            <div class="form-group">
+                                <label for="feedback">Feedback / Special Requests</label>
+                                <textarea id="feedback" class="form-control" rows="4" placeholder="How was your experience?"></textarea>
+                            </div>
 
-    <p><b>Mobile No:</b> +91 98765 43210</p>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
 
-    <p><b>Email:</b> deliciousbites@gmail.com</p>
+            </div>
+        </div>
+    </section>
 
-    <p><b>Location:</b> Main Market, Karimpur, Punjab, India</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem;">
+                <i class="fa-solid fa-utensils" style="color: var(--accent-color);"></i> Delicious Bites
+            </div>
+            <p>&copy; 2026 Delicious Bites Restaurant | All Rights Reserved</p>
+        </div>
+    </footer>
 
-    <!-- Google Map -->
-    <iframe src="https://www.google.com/maps?q=Karimpur,Punjab&output=embed" width="500" height="300">
-    </iframe>
-
-    <!-- Login Form -->
-    <h2 id="login">Customer Login Form</h2>
-
-    <form>
-
-        <label>Name:</label><br>
-        <input type="text" placeholder="Enter Your Name"><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter Your Email"><br><br>
-
-        <label>Password:</label><br>
-        <input type="password" placeholder="Enter Password"><br><br>
-
-        <!-- Radio Button -->
-        <label>Gender:</label><br>
-
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-
-        <br><br>
-
-        <!-- Check Box -->
-        <label>Select Your Favorite Food:</label><br>
-
-        <input type="checkbox"> Pizza <br>
-        <input type="checkbox"> Burger <br>
-        <input type="checkbox"> Pasta <br>
-        <input type="checkbox"> Ice Cream <br>
-
-        <br>
-
-        <!-- Text Area -->
-        <label>Feedback:</label><br>
-
-        <textarea rows="5" cols="40" placeholder="Write your feedback here"></textarea>
-
-        <br><br>
-
-        <input type="submit" value="Login">
-
-    </form>
-
-    <hr>
-
-    <center>
-        <p>© 2026 Delicious Bites Restaurant | All Rights Reserved</p>
-    </center>
-
+    <!-- Script for sticky navbar -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-
 </html>
